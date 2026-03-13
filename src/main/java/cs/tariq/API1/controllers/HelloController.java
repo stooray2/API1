@@ -6,6 +6,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
+     @GetMapping("/")
+    public String sayHello(){
+        return "Welcome to Tariq REST API";
+    }
+
     @GetMapping("/hello")
     public String sayHello(){
         return "Welcome to my REST API";
@@ -17,3 +22,4 @@ public class HelloController {
     }
 
 }
+
