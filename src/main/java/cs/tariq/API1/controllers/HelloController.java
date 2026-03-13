@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
      @GetMapping("/")
-    public String sayHello(){
+    public String home(){
         return "Welcome to Tariq REST API";
     }
 
@@ -22,4 +22,5 @@ public class HelloController {
     }
 
 }
+
 
